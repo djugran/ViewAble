@@ -1,0 +1,38 @@
+# Node modules
+node_modules/
+
+# API Keys (sensitive)
+.env
+.env.local
+.env*.local
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Build outputs (if you add build step later)
+dist/
+build/
+
+# Package manager lock files (optional, depends on preference)
+# package-lock.json
+# yarn.lock
