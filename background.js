@@ -7,7 +7,7 @@ let viewableVoiceSettings = {
   rate: 1
 };
 
-const ELEVENLABS_API_KEY = 'sk_325c6d86f50836746c1aaeeb6d620b07f30934832987eb4a';
+const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY || 'YOUR_ELEVENLABS_API_KEY_HERE';
 
 chrome.storage.sync.get(['viewableVoiceSettings'], data => {
   if (data && data.viewableVoiceSettings) {
@@ -178,7 +178,7 @@ async function speakText(text, gender = 'male', tabId) {
   }
 }
 
-const GROQ_API_KEY = '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';
+const GROQ_API_KEY = process.env.GROQ_API_KEY || 'YOUR_GROQ_API_KEY_HERE';
 
 function parseGroqQuizResponse(content) {
   let parsed;
